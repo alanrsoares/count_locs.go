@@ -85,7 +85,7 @@ func processInput(dir string, patterns []string) {
 
 	// If more than one pattern, show the breakdown.
 	if len(patterns) > 1 {
-		fmt.Println("Breakdown of Lines of Code by Glob:\n")
+		fmt.Println("Breakdown of Lines of Code by Glob:")
 		for pattern, count := range results {
 			fmt.Printf("  %s: %d\n", pattern, count)
 		}
