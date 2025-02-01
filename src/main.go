@@ -85,7 +85,7 @@ func processInput(dir string, patterns []string) {
 		fmt.Println()
 
 		for pattern, count := range results {
-			fmt.Printf("-  %s: %d\n", pattern, count)
+			fmt.Printf("-  %s:\t %d\n", pattern, count)
 		}
 
 		fmt.Println()
