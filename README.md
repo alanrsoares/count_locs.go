@@ -155,7 +155,7 @@ A `Makefile` is included for convenience. Here are some example targets:
 
 Contributions are welcome! Please follow these steps:
 
-1. Fork the repository.
+1. Fork the repository.cls
 2. Create a feature branch.
 3. Commit your changes.
 4. Push to your branch.
