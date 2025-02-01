@@ -56,11 +56,7 @@ func main() {
 	// Otherwise the first argument is the directory and the remaining arguments are glob patterns.
 	dir := args[1]
 	patterns := args[2:]
-	runCountCommand(dir, patterns)
-}
 
-// runCountCommand dispatches the count command.
-func runCountCommand(dir string, patterns []string) {
 	processInput(dir, patterns)
 }
 
@@ -86,9 +82,12 @@ func processInput(dir string, patterns []string) {
 	// If more than one pattern, show the breakdown.
 	if len(patterns) > 1 {
 		fmt.Println("Breakdown of Lines of Code by Glob:")
+		fmt.Println()
+
 		for pattern, count := range results {
-			fmt.Printf("  %s: %d\n", pattern, count)
+			fmt.Printf("-  %s: %d\n", pattern, count)
 		}
+
 		fmt.Println()
 	}
 
